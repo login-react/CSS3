@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自定义动画</title>
+	<style type="text/css">
+		li{
+			width: 200px;
+			height: 200px;
+			background: #ccc;
+			float: left;
+			margin-right: 10px;
+			list-style: none;
+		}
+		/*自定义动画*/
+		@keyframes myself{
+			from{
+				background-color: green;
+			}
+			to{
+				background-color: blue;
+			}
+		}
+		li:hover{
+			animation: myself 1s;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+</body>
+</html>
