@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>css新特性</title>
+	<style type="text/css">
+		.demo{
+			width: 300px;
+			border: 1px solid grey;
+			margin: 50px auto;
+		}
+		.demo li{
+			list-style: none;
+			float: left;
+			padding: 10px;
+			border: 1px solid grey;
+			margin-right: 5px;
+			width: 20px;
+			text-align: center;
+			border-radius: 50%;
+			background: orange;
+		}
+		/*清除浮动*/
+		.clear-fix{
+			clear: both;
+			overflow: hidden;
+		}
+		.demo li:first-child{
+			background: red;
+		}
+		.demo li:last-child{
+			background: blue;
+		}
+
+		.demo li:nth-child(3){
+			background: green;
+		}
+		.demo li:nth-of-type(3){
+			background: green;
+		}
+		.second::first-letter {
+			font-size: 20px;
+			color: red;
+			float: left;
+		}
+		.second::first-line{
+			font-size: 15px;;
+			font-weight: bold;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+<div class="demo">
+	<ul class="clear-fix">
+		<p>wwwwwwwwwww</p>
+		<li><a>1</a></li>
+		<li><a>2</a></li>
+		<li><a>3</a></li>
+		<li><a>4</a></li>
+		<li><a>5</a></li>
+	</ul>
+</div>
+<div class="second">
+	若基顶替鼎折覆餗压顶顶替夺在震夺夺夺夺有夺在城城地有有发奢侈奇才顶替一水电费枯
+</div>
+</body>
+</html>
